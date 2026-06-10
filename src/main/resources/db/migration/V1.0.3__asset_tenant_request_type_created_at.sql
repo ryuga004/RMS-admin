@@ -1,0 +1,3 @@
+ALTER TABLE asset_tenant_request
+    ADD COLUMN type VARCHAR(20) NOT NULL DEFAULT 'REQUEST',
+    ADD COLUMN created_at TIMESTAMPTZ NOT NULL DEFAULT now();
